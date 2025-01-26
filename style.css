@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #fce4ec;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .bouquet {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 50px;
+  }
+  
+.flower {
+    width: 80px;
+    height: 80px;
+    background-image: url('flower.png');
+    background-size: cover;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.flower:hover {
+    transform: scale(1.2);
+}
+  
+  .flower::before {
+    top: -20px;
+    left: 15px;
+  }
+  
+  .flower::after {
+    bottom: -20px;
+    left: 15px;
+  }
+  
+  #message-box {
+    margin-top: 30px;
+    font-size: 1.5rem;
+    color: #880e4f;
+    font-weight: bold;
+  }
